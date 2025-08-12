@@ -1,0 +1,38 @@
+# Your life will be easier if you keep these sorted by tag
+# tag values must be lower case with underscores instead of spaces, with only a-z and/or _
+# Include seperate tag_terms blocks for each tag
+# terms must be a comma-sep list ["one","two"] even if there is only one entry in the list ["one"]
+
+[processing_info]
+search_column = "Description"
+tags_column = "description_tags"
+overwrite_tags_column = "N"      # Y or N
+process_logging = "Y"            # Y or N
+
+#
+# Add your search tag and associated terms one per block below
+#
+
+[[tag_terms]]
+tag = "claim_status"
+terms = ["claim status"]
+
+[[tag_terms]]
+tag = "data"
+terms = ["data"]
+
+[[tag_terms]]
+tag = "document_request"
+terms = ["Documentation"]
+
+[[tag_terms]]
+tag = "mail"
+terms = ["mail"]
+
+[[tag_terms]]
+tag = "review_document"
+terms = ["Please see attached document for workers", "filled out"]
+
+[[tag_terms]]
+tag = "time_questions"
+terms = ["missed time", "time covered"]
