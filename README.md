@@ -2,11 +2,15 @@
 
 ## Description
 
-Reads a CSV column content for matches to lists of terms and adds a pipe delimited list of their associated tags to another column when the terms are found.
+Reads a CSV column's content for matches to lists of terms and adds a pipe delimited list of their associated tags to another column when the terms are found.
 
 The terms in the terms lists of the configuration file are compared in a case-insensitive manner to the content of the search column.
 
 Search terms must match exactly (except for case) and must be delimited from whitespace or punctuation in order to match. This prevents matching for the search term `Bill` and having it match against `billing`. Searching for `Bill` will match against `Okay, send me a bill.`.
+
+### Example Matching Results in New CSV
+
+<p align="center"><img src="images/term_tagger_results_example.png" width="400" /></p>
 
 ## Installation Dependencies
 
@@ -78,6 +82,10 @@ To run the tool, got to the Git Bash or PS Terminal and run (`<something>` insid
 csv_term_tagger <csv-file-to-process-path>
 csv_term_tagger Z:/my_csv.csv
 ```
+
+#### Example CLI Output When Finished
+
+<p align="center"><img src="images/term_tagger_cli_file_write_location_status.png" width="500" /></p>
 
 ### Example Batch File
 
