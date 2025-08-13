@@ -94,7 +94,7 @@ def run(*, csv_file_path):
     out_records = []  # store the row info and dump to file at the end only if no errors
 
     # Open the CSV file in read mode ('r') with universal newline support
-    with Path.open(csv_file_path, newline="") as reader_file:
+    with Path.open(csv_file_path, newline="", encoding="utf-8") as reader_file:
         overwriting = False
         reader = csv.DictReader(reader_file)
         headers = reader.fieldnames
