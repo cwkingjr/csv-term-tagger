@@ -30,7 +30,7 @@ uv self update
 
 ## Common Installation Extras
 
-If you want to use some command line interface (CLI) tools, but want to be able to use Windows Explorer to drag a file/folder (path) and drop it on an icon to run it with your selection, you can build a Windows Batch file for the ClI app to do that. Learn how here: https://github.com/cwkingjr/windows-drag-to-app-with-args
+If you want to use some command line interface (CLI) tools, but want to be able to use Windows Explorer to drag a file/folder (path) and drop it on an icon to run it with your selection, you can build a Windows Batch file for the CLI app to do that. Learn how here: https://github.com/cwkingjr/windows-drag-to-app-with-args
 
 ## CSV Term Tagger Installation, Update, and Removal
 
@@ -76,7 +76,7 @@ If you are interested in using Git Bash, you can go into that terminal and run t
 
 ### Invoke CSV Term Tagger
 
-To run the tool, got to the Git Bash or PS Terminal and run (`<something>` inside angle brackets indicates this is something your are supposed to replace, replacing angles and all; meaning, leave out the angles.):
+To run the tool, go to the Git Bash or PS Terminal and run (`<something>` inside angle brackets indicates this is something your are supposed to replace, replacing angles and all; meaning, leave out the angles.):
 
 ```bash
 csv_term_tagger <csv-file-to-process-path>
@@ -89,4 +89,4 @@ csv_term_tagger Z:/my_csv.csv
 
 ### Example Batch File
 
-If your system installs this application in the same area as mine does, you should be able to download this file https://github.com/cwkingjr/csv-term-tagger/blob/main/term_tagger.bat onto your desktop and use it to drag File Explorer a CSV file path link to it and drop it on the desktop icon for this file to invoke the app. If it doesn't work, see the installation extras section above to reconfigure it for your installation path.
+If your system installs this application in the same area as mine does, you should be able to download this file https://github.com/cwkingjr/csv-term-tagger/blob/main/term_tagger.bat onto your desktop and use Windows (File) Explorer to drag a CSV file path to it and drop it on the icon to invoke the app. If it doesn't work, see the installation extras section above to reconfigure it for your installation path.
