@@ -26,7 +26,7 @@ def get_toml_data(*, config_path) -> dict:
         sys.exit(1)
 
     try:
-        with Path.open(config_path, "rb") as f:
+        with Path.open(config_path, "rb", newline="", encoding="utf-8") as f:
             toml_data = tomllib.load(f)
     except OSError as e:
         msg = "Problem with loading toml data from the config file. Please check the settings in your toml file to ensure they match the example toml file in the repo."
@@ -155,7 +155,7 @@ def run(*, csv_file_path):
 
         out_file = get_dated_output_file_path(filename_prefix="term_tagger_results")
 
-        with Path.open(out_file, "w", newline="") as csvfile:
+        with Path.open(out_file, "w", newline="", encoding="utf-8") as csvfile:
             if not overwriting:
                 # the tags column header doesn't exist, so we need to add it
                 headers = [*headers, tags_column]
