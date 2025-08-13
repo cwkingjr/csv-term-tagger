@@ -10,7 +10,7 @@ Search terms must match exactly (except for case) and must be delimited from whi
 
 ### Example Matching Results in New CSV
 
-<p align="center"><img src="images/term_tagger_results_example.png" width="400" /></p>
+<p align="center"><img src="images/term_tagger_results_example.png" width="500" /></p>
 
 ## Installation Dependencies
 
